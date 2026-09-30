@@ -1,8 +1,11 @@
 numero = int(input("ingrese su numero "))
+factorial = 1
 if numero <=0 :
     print ("error")
 else :
-    for i in range(1,numero + 1) :
-        print("el factorial del numero es " + str(i * i))
-    
+    for i in range (factorial, numero + 1) :
+        factorial_resultante = factorial * i
+        factorial = factorial_resultante
+        print (factorial)
+
 
