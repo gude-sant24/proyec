@@ -3,9 +3,17 @@ factorial = 1
 if numero <=0 :
     print ("error")
 else :
-    for i in range (factorial, numero + 1) :
+    secuencia = str(numero)
+    for i in range (numero,0,-1) :
         factorial_resultante = factorial * i
         factorial = factorial_resultante
-        print (factorial)
+        if i == numero :
+            secuencia = str(i)
+        else :
+            secuencia = secuencia + "*" + str(i)
+        print(str(numero) + "!" + "=" + secuencia + "=" + str(factorial))
+    
 
+
+    
 
